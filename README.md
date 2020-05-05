@@ -1,4 +1,4 @@
-Based on https://github.com/hugonun/discord2sheet-bot to use with https://github.com/Freezman13/MMO-Map-Project 
+Based on https://github.com/hugonun/discord2sheet-bot to use with https://github.com/Freezman13/Map-Project 
 
 **Setup:**
 
