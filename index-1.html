@@ -1,0 +1,26 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<p>Based on https://github.com/hugonun/discord2sheet-bot to use with https://github.com/Freezman13/MMO-Map-Project </p>
+<p><strong>Setup:</strong></p>
+<p><strong>Step 1:</strong> Enable the API and download credentials.json. This can be done here: https://developers.google.com/sheets/api/quickstart/python#step_1_turn_on_the</p>
+<p>Make sure credentials.json is stored in the same directory as the bot.</p>
+<p><strong>Step 2:</strong> Open init.py and change the following values(&lt;&gt;):</p>
+<p>SPREADSHEET_ID = &lt;&gt; - The ID of the spreashsheet to store the data. It can be found on the URL once opened.</p>
+<p>FIELDS = &lt;&gt; - Amount of fields/cells that get stored. They are on the user's message seperated by comma (!s field1, field2,field 3)</p>
+<p>client.run('&lt;&gt;') - The token of the Discord bot.</p>
+<p>How to get the token:    <br />
+https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&amp;-getting-a-token</p>
+<p>Discord developer portal:   <br />
+https://discordapp.com/developers/applications/       </p>
+<p><strong>Step 3:</strong> Install Python dependencies</p>
+<p>If you haven't installed Python yet, download it <a href="https://www.python.org/">here</a>.</p>
+<p>Install discordpy: <code>pip install discord.py</code></p>
+<p>Run the pip command listed here: https://developers.google.com/sheets/api/quickstart/python#step_2_install_the_google_client_library</p>
+<p><strong>Step 4:</strong> Run the bot</p>
+<p><code>python init.py</code></p>
+<hr />
+<h2 id="additional-configutations-and-information">Additional configutations and Information</h2>
+<p>REQUIREDROLE = &lt;&gt; - If you want to restrict the command to a specific role, insert here the role id. If not, insert<code>None</code>.</p>
+<p>RANGE_NAME = &lt;&gt; - Where the data should go in the spreadsheet. Default value is <code>A1</code>.</p>
+<p>DATA = &lt;&gt; - What data goes to the rows, seperated by <code>[]</code>. Example: <code>DATA = [result[0]] + [''] + [result[1]]</code></p>
+<p><strong>If using sheets that were created after launching the bot for the first time</strong> the token.pickle has to be deleted and the bot launched again, it will again ask for spreadsheet access. Permission have to be renewed or the bot won't have access to the new spreadsheets unless they are public to edit.</p>
+</body></html>
